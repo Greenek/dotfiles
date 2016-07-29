@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/git-flow/init.fish

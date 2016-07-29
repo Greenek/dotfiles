@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/thefuck/functions/fuck.fish

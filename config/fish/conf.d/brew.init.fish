@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/brew/init.fish

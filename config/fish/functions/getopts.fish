@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/getopts/getopts.fish

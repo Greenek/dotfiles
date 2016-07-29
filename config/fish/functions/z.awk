@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/z/functions/z.awk

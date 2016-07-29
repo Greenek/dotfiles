@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/osx/functions/showhidden.fish

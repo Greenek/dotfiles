@@ -1,0 +1,1 @@
+/Users/greenek/.config/fisherman/await/functions/await.fish
