@@ -2,7 +2,7 @@
 dir="$HOME/.dotfiles"
 
 # our config files/dirs to link
-paths="config/fish config/fisherman vim vimrc wakatime.cfg"
+paths="config/fish/ config/fisherman/ vim/ vimrc wakatime.cfg"
 
 ########
 
@@ -22,14 +22,14 @@ fi
 
 # move files to the backup dir, then create symlinks
 for path in $paths; do
-  dest="$HOME/.$path"
-
-  if [ ! -d $path ]; then
+  if [ ! -e $path ]; then
     echo "$path configuration doesn't exists in repository"
-    continue;
+    continue
   fi
 
-  if [ -h $dest ]; then
+  dest="$HOME/.$path"
+
+  if [ -L ${dest%/} ]; then
     echo "~/.$path is already linked"
     continue
   fi
