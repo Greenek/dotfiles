@@ -2,7 +2,7 @@
 dir="$HOME/.dotfiles"
 
 # our config files/dirs to link
-paths="config/fish/ config/fisherman/ vim/ vimrc wakatime.cfg"
+paths="config/fish config/fisherman vim vimrc wakatime.cfg"
 
 ########
 
@@ -29,13 +29,13 @@ for path in $paths; do
 
   dest="$HOME/.$path"
 
-  if [ -L ${dest%/} ]; then
+  if [ -L $dest ]; then
     echo "~/.$path is already linked"
     continue
+  elif [ -e $dest ]; then
+    echo "Moving old configuration files to $dir/$backup"
+    mv $dest $backup
   fi
-
-  echo "Moving old configuration files to $dir/$backup"
-  mv $dest $backup
 
   echo "Creating symlink to $path in home directory"
   ln -s $path $dest
